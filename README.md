@@ -1,4 +1,7 @@
 # Gau Shop
+GAUDENCE JOSEPH WASHOKERA
+14322060/t.24
+ITS-2  MZUMBE STUDENT
 
 A simple e-commerce platform for beginners, built with:
 
