@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background: #2d1b4e;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1100px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.site-header {
+    background: #1a0f2e;
+    border-bottom: 2px solid #ff9933;
+}
+
+.header-inner {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff9933;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-weight: 600;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff9933;
+}
+
+.hero {
+    padding: 42px 0 26px;
+}
+
+.hero h1 {
+    margin: 0 0 10px;
+    font-size: clamp(30px, 5vw, 48px);
+    color: #ff9933;
+}
+
+.hero p {
+    margin: 0;
+    color: #ffb366;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    padding: 20px 0 42px;
+}
+
+.card {
+    background: #3d2855;
+    border: 2px solid #ff9933;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    border-color: #ffcc99;
+    transform: translateY(-4px);
+}
+
+.product-image {
+    height: 190px;
+    background: #4d3565;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff9933;
+    font-weight: 700;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.admin-image-preview {
+    width: 160px;
+    height: 120px;
+    border: 2px solid #ff9933;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #4d3565;
+}
+
+.admin-image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.card h2,
+.card h3 {
+    margin: 0 0 8px;
+    color: #ffffff;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffcc99;
+}
+
+.muted {
+    color: #ffb366;
+}
+
+.btn,
+button {
+    display: inline-block;
+    border: 0;
+    border-radius: 6px;
+    padding: 10px 14px;
+    background: #ff9933;
+    color: #1a0f2e;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+    background: #ffb366;
+}
+
+.btn.secondary {
+    background: #4d3565;
+    color: #ffffff;
+    border: 1px solid #ff9933;
+}
+
+.btn.secondary:hover {
+    background: #5d4575;
+}
+
+.btn.danger {
+    background: #ff6666;
+    color: #ffffff;
+}
+
+.btn.danger:hover {
+    background: #ff8888;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    background: #3d2855;
+    border: 2px solid #ff9933;
+    border-radius: 8px;
+    margin: 24px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 13px;
+    text-align: left;
+    border-bottom: 1px solid #ff9933;
+    color: #ffffff;
+}
+
+th {
+    background: #2d1b4e;
+    color: #ff9933;
+    font-weight: 700;
+}
+
+.form-box {
+    max-width: 620px;
+    background: #3d2855;
+    border: 2px solid #ff9933;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 24px 0 42px;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #ff9933;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: 2px solid #ff9933;
+    border-radius: 6px;
+    padding: 10px;
+    font: inherit;
+    background: #2d1b4e;
+    color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ffb366;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.notice {
+    background: #4d3565;
+    border: 2px solid #ff9933;
+    color: #ffcc99;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.error {
+    background: #5d2a2a;
+    border: 2px solid #ff6666;
+    color: #ffb366;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.site-footer {
+    padding: 28px 0;
+    color: #ffb366;
+    border-top: 2px solid #ff9933;
+    background: #1a0f2e;
+}
+
+@media (max-width: 640px) {
+    .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+    }
+}
